@@ -57,4 +57,4 @@ class HimnoGalegoSkill(MycroftSkill):
 
 
 def create_skill():
-    return SingingSkill()
+    return HimnoGalegoSkill()
