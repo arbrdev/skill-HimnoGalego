@@ -24,18 +24,12 @@ from mycroft import MycroftSkill, intent_handler
 from mycroft.skills.audioservice import AudioService
 from mycroft.audio import wait_while_speaking
 
-class SingingSkill(MycroftSkill):
+class HimnoGalegoSkill(MycroftSkill):
     def __init__(self):
-        super(SingingSkill, self).__init__(name="SingingSkill")
+        super(HimnoGalegoSkill, self).__init__(name="HimnoGalegoSkill")
         self.process = None
         self.play_list = {
-            0: join(dirname(__file__), "popey-favourite.mp3"),
-            1: join(dirname(__file__), "popey-jackson.mp3"),
-            2: join(dirname(__file__), "popey-jerusalem.mp3"),
-            3: join(dirname(__file__), "popey-lose-yourself.mp3"),
-            4: join(dirname(__file__), "popey-lovemetender.mp3"),
-            5: join(dirname(__file__), "popey-rocketman.mp3"),
-            6: join(dirname(__file__), "drnimpo-robots.mp3"),
+            0: join(dirname(__file__), "HimnoGalego.mp3"),
         }
 
     def initialize(self):
